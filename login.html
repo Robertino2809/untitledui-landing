@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled UI</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <a href="main.html"><img src="assets/Logo.png" /></a>
+      </div>
+      <ul class="nav-links">
+          <li><a href="main.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Resources</a>
+            <div class="dropdown-content">
+                <a href="#">Blog</a>
+                <a href="#">Customer stories</a>
+                <a href="#">Video tutorials</a>
+            </div>
+          </li>
+          <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button class="btn login"><a href="login.html">Log in</a></button>
+      <button class="btn signup"><a href="register.html">Sign up</a></button>
+    </div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+  </nav>
+
+
+  <!-- Login -->
+  <section>
+    <div class="container">
+      <div class="left-side">
+        <div class="auth">
+          <img src="assets/Logo.png" />
+          <h2>Log in</h2>
+          <p>Welcome back! Please enter your details.</p>
+          <div id="error"></div>
+          <form id="form" name="loginform" method="GET">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="Enter your email" name="email" required/>
+            <label>Password</label>
+            <input id="password" type="password" placeholder="Enter your password" name="password" required />
+            <div class="form-group-row">
+              <label class="checkbox-container">
+                <input type="checkbox" id="RememberMe" name="remember_me" />
+                Remember for 30 days
+              </label>
+              <a href="#" class="forgot-password">Forgot password</a>
+            </div>
+            <button class="btn-signin" type="submit">Sign in</button>            
+            <button class="btn-google" type="submit">Sign in with Google</button>  
+            <div class="no-account">
+              <p>Don't have an account? <span class="signup-text">Sign up</span></p>         
+            </div> 
+          </form>
+        </div>
+      </div>
+      <div class="right-side">
+        <img src="assets/login.png" />
+      </div>
+    </div>
+  </section>
+  
+  <script src="js/login.js">
+    // function validateForm() {
+    //   let x = document.forms["loginform"]["email"].value;
+    //   if (x == "") {
+    //     alert("Email must be filled out!");
+    //     return false;
+    //   }
+
+    //   let y = document.forms["loginform"]["password"].value;
+    //   if (y == "") {
+    //     alert("Password must be filled out!");
+    //     return false;
+    //   }
+    // }
+  </script>
+  
+</body>
+</html>
